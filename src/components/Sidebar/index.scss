@@ -59,7 +59,7 @@
 
       &:after {
         content: '';
-        font-size: 9x;
+        font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -76,6 +76,17 @@
         }
       }
     }
-    
+
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
   } 
 }
