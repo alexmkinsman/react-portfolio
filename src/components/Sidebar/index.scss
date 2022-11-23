@@ -17,7 +17,7 @@
       width: 24px;
       height: auto;
 
-      &.sub-logo {
+      &.sub-logo  {
         width: 50px;
       }
     }
@@ -30,7 +30,7 @@
     height: 210px;
     top: 50%;
     margin-top: -120px;
-    width: 100%
+    width: 100%;
 
     a {
       font-size: 22px;
@@ -39,13 +39,13 @@
       line-height: 51px;
       height: 51px;
       position: relative;
-      text-decoration: none
+      text-decoration: none;
 
       i {
         transition: all 0.3s ease-out;
       }
 
-    } &:hover {
+      &:hover {
         color: #ffd700;
 
         svg {
@@ -59,7 +59,7 @@
 
       &:after {
         content: '';
-        font-size: 9px;
+        font-size: 9x;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -71,9 +71,11 @@
       }
 
       &:first-child {
-        &::after {
+        &::after{
           content: 'HOME';
         }
       }
+    }
+    
   } 
 }
