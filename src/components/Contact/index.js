@@ -72,6 +72,17 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <div className='info-map'>
+          Alexandra Kinsman,
+          <br />
+          United States
+          <br />
+          9205 Questor Place
+          <br />
+          San Diego, CA, 92108
+          <br />
+          <span>akinsman825@gmail.com</span>
+        </div>
       </div>
       <Loader type="pacman" />
     </>
