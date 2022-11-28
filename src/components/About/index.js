@@ -11,6 +11,9 @@ const About = () => {
             idx={15}
           />
         </h1>
+        <p>This is not a drill.</p>
+        <p>I am a web developer.</p>
+        <p>And I need a job.</p>
       </div>
     </div>
   )
