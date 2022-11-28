@@ -24,6 +24,31 @@ const Contact = () => {
               indx={15}
             />
           </h1>
+          <p>
+            If you have any questions not answered by this portfolio, 
+            please feel free to let me know using the form below.
+          </p>
+          <div className='contact-form'>
+            <form>
+              <ul>
+              <li className='half'> 
+                  <input type="text" name="name" placeholder="Name" required />
+                </li>
+                <li className='half'> 
+                  <input type="email" name="email" placeholder="Email" required />
+                </li>
+                <li> 
+                  <input type="text" name="subject" placeholder="Subject" required />
+                </li>
+                <li> 
+                  <textarea placeholder='Message' name="message" required ></textarea>
+                </li>
+                <li className='h'> 
+                  <input type="submit" className='flat-button' value="SEND" />
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />
