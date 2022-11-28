@@ -1,4 +1,3 @@
-import { EmailJSResponseStatus } from '@emailjs/browser'
 import { useEffect, useRef, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
@@ -7,7 +6,7 @@ import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const refForm = useRef
+  const refForm = useRef()
 
   useEffect(() => {
     setTimeout(()=> {
@@ -20,10 +19,19 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
+        'service_aw7s8fw',
         'template_mgoq53t',
         refForm.current,
         '8pzceHGrVUM8T3x2F'
+      )
+      .then(
+        () => {
+          alert('Message successfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again.')
+        }
       )
   }
   
