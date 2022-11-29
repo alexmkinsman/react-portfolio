@@ -1,6 +1,7 @@
+import React from "react";
 import './index.scss'
 
-const Work = () => {
+const Portfolio = () => {
 
   return (
       <div>
@@ -9,4 +10,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Portfolio
